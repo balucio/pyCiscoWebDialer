@@ -3,15 +3,23 @@ Use Cisco WebDialer to Make a PhoneCall
 
 How to use:
 
-   Change Cisco Call Manager (WebDialer) Ip addrese
+First of all: **Change Cisco Call Manager (WebDialer) Ip address** 
 
-
+```bash
    usage: ciscoDial.py [-h] --username USERNAME --password PASSWORD
                     [--profile PROFILE] --callto CALLTO
-
+```
 
 Example:
-./ciscoDial.py  --username=8140 --password=8140 --profile=8140 --callto=8139
 
-./ciscoDial.py  --username=8140 --password=8140  --callto=8139 
-(profile == username)
+For proxied call you need to specify the proxy user and also the caller profile (telephone number):
+
+```bash
+ ./ciscoDial.py  --username=8140 --password=8140 --profile=8140 --callto=8139
+```
+
+For non proxied user the profile can be omitted, in this case user value will be used:
+
+```bash
+ ./ciscoDial.py  --username=8140 --password=8140  --callto=8139 
+```

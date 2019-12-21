@@ -11,6 +11,7 @@ How to use:
 
 
 Example:
-   ./ciscoDial.py  --username=8140 --password=8140 --profile=8140 --callto=8139
-   ./ciscoDial.py  --username=8140 --password=8140  --callto=8139 
-      (profile == username)
+./ciscoDial.py  --username=8140 --password=8140 --profile=8140 --callto=8139
+
+./ciscoDial.py  --username=8140 --password=8140  --callto=8139 
+(profile == username)

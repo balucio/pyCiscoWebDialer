@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:WD70" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soapenv:Header />
+   <soapenv:Body>
+      <urn:makeCallSoap soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <in0 xsi:type="urn:Credential">
+            <userID xsi:type="xsd:string">%(userId)s</userID>
+            <password xsi:type="xsd:string">%(password)s</password>
+         </in0>
+         <in1 xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="soapenc:string">%(destination)s</in1>
+         <in2 xsi:type="urn:UserProfile">
+            <user xsi:type="xsd:string">%(callerUserId)s</user>
+            <deviceName xsi:type="xsd:string">%(deviceName)s</deviceName>
+            <lineNumber xsi:type="xsd:string">%(lineNumber)s</lineNumber>
+            <supportEM xsi:type="xsd:boolean">false</supportEM>
+            <locale xsi:type="xsd:string">Italian</locale>
+            <dontAutoClose xsi:type="xsd:boolean">false</dontAutoClose>
+            <dontShowCallConf xsi:type="xsd:boolean">true</dontShowCallConf>
+         </in2>
+      </urn:makeCallSoap>
+   </soapenv:Body>
+</soapenv:Envelope>

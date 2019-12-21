@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+      xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:urn="urn:WD70">
+  <soapenv:Header/>
+  <soapenv:Body>
+     <urn:getProfileSoap soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+        <in0 xsi:type="urn:Credential">
+           <userID xsi:type="xsd:string">%(userId)s</userID>
+           <password xsi:type="xsd:string">%(password)s</password>
+        </in0>
+        <in1 xsi:type="soapenc:string" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">%(profileUserId)s</in1>
+     </urn:getProfileSoap>
+   </soapenv:Body>
+</soapenv:Envelope>

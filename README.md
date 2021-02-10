@@ -1,9 +1,9 @@
 # pyCiscoWebDialer
-Use Cisco WebDialer to Make a PhoneCall
+Use Cisco CallManager WebDialer API to Make a PhoneCall.
 
 How to use:
 
-First of all: **Change Cisco Call Manager (WebDialer) Ip address** 
+First of all you need to **Change Cisco Call Manager (WebDialer) Ip address** 
 
 ```bash
    usage: ciscoDial.py [-h] --username USERNAME --password PASSWORD
